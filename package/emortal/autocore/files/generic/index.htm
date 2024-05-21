@@ -64,14 +64,14 @@
 		if not has_switch then
 			eth_info = luci.sys.exec("ethinfo")
 		end
-
+		local week = {"一","二","三","四","五","六","日"}
 		local rv = {
 			cpuinfo    = cpu_info,
 			cpuusage   = cpu_usage,
 			ethinfo    = eth_info,
 			userinfo   = user_info,
 			uptime     = sysinfo.uptime or 0,
-			localtime  = os.date(),
+			localtime  = "星期"..week[tonumber(os.date("%u"))]..os.date(" , %Y年%m月%d日 , %X"),
 			loadavg    = sysinfo.load or { 0, 0, 0 },
 			memory     = meminfo,
 			memcached  = mem_cached,
