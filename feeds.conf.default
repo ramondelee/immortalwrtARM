@@ -3,7 +3,7 @@ src-git luci https://github.com/ramondelee/luci.git;openwrt-18.06-k5.4
 src-git routing https://github.com/openwrt/routing.git
 src-git telephony https://github.com/openwrt/telephony.git
 src-git package/ddns-go https://github.com/ramondelee/luci-app-ddns-go.git
+src-git package/helloworld https://github.com/fw876/helloworld.git
 src-git package/luci-app-parentcontrol https://github.com/ramondelee/luci-app-parentcontrol.git
 src-git package/luci-theme-argon https://github.com/ramondelee/luci-theme-argon.git
 src-git package/luci-app-argon-config https://github.com/ramondelee/luci-app-argon-config.git
-src-git package/helloworld https://github.com/fw876/helloworld.git
